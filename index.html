@@ -170,111 +170,260 @@
 
   <!-- Header with Image and Intro -->
   <header>
-    <img src="Rumi.jpg" alt="Profile" class="profile-img">
+  <img src="Rumi.jpg" alt="Profile" class="profile-img" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid #fff; object-fit: cover;">
+
     <h1 class="fw-bold">Sultana Rumi</h1>
     <p class="lead">Web Designer | Creative Thinker | Tech Enthusiast</p>
   </header>
 
   <!-- About -->
-  <section id="about" class="fade-up">
-    <div class="container text-center">
-      <h2 class="section-title">About Me</h2>
-      <p class="mb-4">Hi! I'm Sultana Rumi, a web designer who loves to design user-friendly and creative digital solutions. I enjoy learning new technologies, designing clean interfaces, and solving real-world problems .</p>
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <ul class="list-unstyled">
-            <li><strong>Email:</strong> ivysultanactg@.com</li>
-            <li><strong>Phone:</strong> 01812287810</li>
-            <li><strong>Location:</strong> Chittagong | Bangladesh</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="about" class="fade-up py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">About Me</h2>
+    <p class="lead mb-5">
+      Hello! I'm <strong>Sultana Rumi</strong>, a passionate <strong>Web Designer</strong> dedicated to creating 
+      user-friendly, visually appealing, and impactful digital experiences. I enjoy learning emerging 
+      technologies, designing clean interfaces, and transforming complex ideas into elegant solutions.
+    </p>
 
-  <!-- Hobbies -->
-  <section id="hobbies" class="bg-light fade-up">
-  <div class="container">
-    <h2 class="section-title">Hobbies</h2>
-    <div class="row text-center">
-      <div class="col-md-3 col-6 mb-4">
-        <i class="bi bi-camera display-4 text-primary"></i>
-        <p class="mt-2">Photography</p>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <i class="bi bi-music-note-beamed display-4 text-success"></i>
-        <p class="mt-2">Music</p>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <i class="bi bi-book display-4 text-danger"></i>
-        <p class="mt-2">Reading</p>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <i class="bi bi-egg-fried display-4 text-warning"></i>
-        <p class="mt-2">Cooking</p>
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <ul class="list-unstyled text-start mx-auto d-inline-block">
+          <li class="mb-2"><i class="bi bi-envelope-fill me-2 text-primary"></i><strong>Email:</strong> <a href="mailto:ivysultanactg@gmail.com" class="text-decoration-none">ivysultanactg@gmail.com</a></li>
+          <li class="mb-2"><i class="bi bi-telephone-fill me-2 text-primary"></i><strong>Phone:</strong> <a href="tel:01812287810" class="text-decoration-none">+880 1812-287810</a></li>
+          <li class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"></i><strong>Location:</strong> Chittagong, Bangladesh</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 
+  <!-- Hobbies -->
+  <!-- AOS CSS (add this once in your <head>) -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<section id="hobbies" class="bg-light fade-up py-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-5">Hobbies</h2>
+    <div class="row g-4">
+
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-4 shadow-sm rounded-3 bg-white hobby-card">
+          <i class="bi bi-camera display-4 text-primary"></i>
+          <p class="mt-3 mb-0 fw-semibold">Photography</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 shadow-sm rounded-3 bg-white hobby-card">
+          <i class="bi bi-music-note-beamed display-4 text-success"></i>
+          <p class="mt-3 mb-0 fw-semibold">Music</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="p-4 shadow-sm rounded-3 bg-white hobby-card">
+          <i class="bi bi-book display-4 text-danger"></i>
+          <p class="mt-3 mb-0 fw-semibold">Reading</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="p-4 shadow-sm rounded-3 bg-white hobby-card">
+          <i class="bi bi-egg-fried display-4 text-warning"></i>
+          <p class="mt-3 mb-0 fw-semibold">Cooking</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AOS JS (add this before your closing </body>) -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+<!-- Optional CSS for hover animation -->
+<style>
+  .hobby-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .hobby-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+</style>
+
+
+
   <!-- Skills -->
-  <section id="skills" class="fade-up">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <h6>HTML</h6>
-          <div class="progress">
-            <div class="progress-bar bg-success" style="width: 80%">80%</div>
+  <!-- AOS CSS (add once in <head>) -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<section id="skills" class="fade-up py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Skills</h2>
+    <div class="row g-4">
+
+      <!-- Skill Item -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-card p-4 rounded-3 shadow-sm bg-white">
+          <div class="d-flex justify-content-between">
+            <h6 class="mb-2">HTML</h6>
+            <span class="fw-bold">80%</span>
           </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <h6>CSS</h6>
           <div class="progress">
-            <div class="progress-bar bg-info" style="width: 60%">60%</div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <h6>JavaScript</h6>
-          <div class="progress">
-            <div class="progress-bar bg-warning" style="width: 40%">40%</div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <h6>Python</h6>
-          <div class="progress">
-            <div class="progress-bar bg-primary" style="width: 60%">60%</div>
+            <div class="progress-bar bg-success" data-value="80"></div>
           </div>
         </div>
       </div>
+
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-card p-4 rounded-3 shadow-sm bg-white">
+          <div class="d-flex justify-content-between">
+            <h6 class="mb-2">CSS</h6>
+            <span class="fw-bold">60%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-info" data-value="60"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="skill-card p-4 rounded-3 shadow-sm bg-white">
+          <div class="d-flex justify-content-between">
+            <h6 class="mb-2">JavaScript</h6>
+            <span class="fw-bold">40%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-warning" data-value="40"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="skill-card p-4 rounded-3 shadow-sm bg-white">
+          <div class="d-flex justify-content-between">
+            <h6 class="mb-2">Python</h6>
+            <span class="fw-bold">60%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-primary" data-value="60"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- AOS JS (add before </body>) -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+
+  // Animate progress bars on scroll
+  document.addEventListener("DOMContentLoaded", () => {
+    const progressBars = document.querySelectorAll(".progress-bar");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const value = bar.getAttribute("data-value");
+          bar.style.width = value + "%";
+          observer.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    progressBars.forEach(bar => observer.observe(bar));
+  });
+</script>
+
+<!-- Optional styling -->
+<style>
+  .progress {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .progress-bar {
+    width: 0;
+    transition: width 1.5s ease;
+  }
+</style>
 
   <!-- Education -->
-  <section id="education" class="bg-light fade-up">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <h5>B.Sc. in Computer Science & Engineering</h5>
-              <p class="mb-0">International Islamic University Chittagong | 2021 - 2025</p>
-            </li>
-            <li class="list-group-item">
-              <h5>Secondary High School</h5>
-              <p class="mb-0">Sir Ashutosh Govt College | 2018 - 2020</p>
-            </li>
-            <li class="list-group-item">
-              <h5>Secondary School</h5>
-              <p class="mb-0">Mirza Ahmed Ispahani Smriti Biddalaya | 2006 - 2018</p>
-            </li>
-          </ul>
+<!-- AOS CSS (in <head> if not already added) -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<section id="education" class="bg-light fade-up py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Education</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <!-- Education Item -->
+        <div class="edu-card d-flex align-items-center p-4 mb-4 bg-white shadow-sm rounded-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="edu-icon flex-shrink-0 me-4">
+            <img src="data:image/png;base64,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" alt="IIUC Logo" class="rounded-circle" width="60" height="60">
+          </div>
+          <div>
+            <h5 class="mb-1">B.Sc. in Computer Science & Engineering</h5>
+            <p class="mb-0 text-muted">International Islamic University Chittagong | 2021 - 2025</p>
+          </div>
         </div>
+
+        <!-- Education Item -->
+        <div class="edu-card d-flex align-items-center p-4 mb-4 bg-white shadow-sm rounded-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="edu-icon flex-shrink-0 me-4">
+            <i class="bi bi-mortarboard-fill text-primary display-6"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Higher Secondary Certificate</h5>
+            <p class="mb-0 text-muted">Sir Ashutosh Govt College | 2018 - 2020</p>
+          </div>
+        </div>
+
+        <!-- Education Item -->
+        <div class="edu-card d-flex align-items-center p-4 mb-4 bg-white shadow-sm rounded-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="edu-icon flex-shrink-0 me-4">
+            <i class="bi bi-book-fill text-success display-6"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Secondary School Certificate</h5>
+            <p class="mb-0 text-muted">Mirza Ahmed Ispahani Smriti Biddalaya | 2006 - 2018</p>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- AOS JS (before </body>) -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+<!-- Optional styling -->
+<style>
+  .edu-card:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+</style>
+
 
   <!-- Projects -->
   <section id="projects" class="fade-up">
@@ -323,7 +472,7 @@
   <a href="https://github.com/SultanaRumi2030" target="_blank" rel="noopener">
     <i class="bi bi-github"></i>
   </a>
-  <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">
+  <a href="https://www.linkedin.com/in/sultana-rumi-a27049263/" target="_blank" rel="noopener">
     <i class="bi bi-linkedin"></i>
   </a>
   <a href="https://twitter.com/yourusername" target="_blank" rel="noopener">
