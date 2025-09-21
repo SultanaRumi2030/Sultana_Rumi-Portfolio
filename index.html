@@ -14,9 +14,9 @@
     :root {
       --bg-color: #efe5ef;     /* pastel cream */
       --accent-color: #87aeed; /* pastel blue */
-      --accent2-color: #e096c3;/* pastel pink */
-      --text-color: #333;
-      --card-bg: #ffffff;
+      --accent2-color: #e8a9e0;/* pastel pink */
+      --text-color: #000000;
+      --card-bg: #bb7d7d;
     }
 
     body {
@@ -179,9 +179,9 @@
   <!-- About -->
   <section id="about" class="fade-up py-5 bg-light">
   <div class="container text-center">
-    <h2 class="section-title mb-4">About Me</h2>
+    <h2 class="section-title mb-4">Hello!</h2>
     <p class="lead mb-5">
-      Hello! I'm <strong>Sultana Rumi</strong>, a passionate <strong>Web Designer</strong> dedicated to creating 
+       I'm <strong>Sultana Rumi</strong>, a passionate <strong>Web Designer</strong> dedicated to creating 
       user-friendly, visually appealing, and impactful digital experiences. I enjoy learning emerging 
       technologies, designing clean interfaces, and transforming complex ideas into elegant solutions.
     </p>
@@ -197,55 +197,34 @@
     </div>
   </div>
 </section>
+<!-- Resume Button Section -->
+<section id="view-resume" class="py-5 text-center">
+  <div class="container">
 
-<!-- Designation / Professional Role with Logo inside Card -->
-<section id="designation" class="fade-up py-5">
-  <div class="container text-center">
-    <h2 class="section-title mb-4">Professional Role</h2>
-    
-    <!-- Role Card with Logo -->
-    <div class="role-card p-5 shadow-lg rounded-4 bg-white d-inline-block" data-aos="fade-up" data-aos-delay="100">
-      
-      <!-- Logo -->
-      <div class="logo-container mb-3">
-        <img src="pure.jpg" alt="Pure Lab & Diabetes Center Logo" class="img-fluid rounded-circle shadow" style="max-width:100px;">
-      </div>
-      
-      <!-- Icon -->
-      <i class="bi bi-person-badge display-4 text-primary mb-3"></i>
-      
-      <!-- Text -->
-      <h3 class="fw-bold">Managing Director</h3>
-      <p class="lead mb-0">MD of <span class="text-success">Pure Lab & Diabetes Center</span></p>
-    </div>
+    <a href="resume.html" target="_blank" class="btn-resume">View My Resume</a>
   </div>
 </section>
 
-<!-- Optional CSS for hover effects -->
 <style>
-  .role-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: default;
+  .btn-resume {
+    background: linear-gradient(135deg, #ffe0ec, #e0f7fa);
+    color: #444;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: inline-block;
   }
-  .role-card:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-  }
-  .logo-container img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .logo-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+  .btn-resume:hover {
+    background: linear-gradient(135deg, #f8a1c4, #6aa9bb);
+    color: white;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
   }
 </style>
-
-<!-- AOS Animation -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 800, once: true });
-</script>
 
 
   <!-- Hobbies -->
@@ -308,107 +287,6 @@
   .hobby-card:hover {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  }
-</style>
-
-
-
-  <!-- Skills -->
-  <!-- AOS CSS (add once in <head>) -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-<section id="skills" class="fade-up py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">Skills</h2>
-    <div class="row g-4">
-
-      <!-- Skill Item -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="skill-card p-4 rounded-3 shadow-sm bg-white">
-          <div class="d-flex justify-content-between">
-            <h6 class="mb-2">HTML</h6>
-            <span class="fw-bold">80%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar bg-success" data-value="80"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="skill-card p-4 rounded-3 shadow-sm bg-white">
-          <div class="d-flex justify-content-between">
-            <h6 class="mb-2">CSS</h6>
-            <span class="fw-bold">60%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar bg-info" data-value="60"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="skill-card p-4 rounded-3 shadow-sm bg-white">
-          <div class="d-flex justify-content-between">
-            <h6 class="mb-2">JavaScript</h6>
-            <span class="fw-bold">40%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar bg-warning" data-value="40"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="skill-card p-4 rounded-3 shadow-sm bg-white">
-          <div class="d-flex justify-content-between">
-            <h6 class="mb-2">Python</h6>
-            <span class="fw-bold">60%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar bg-primary" data-value="60"></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- AOS JS (add before </body>) -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 800, once: true });
-
-  // Animate progress bars on scroll
-  document.addEventListener("DOMContentLoaded", () => {
-    const progressBars = document.querySelectorAll(".progress-bar");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const bar = entry.target;
-          const value = bar.getAttribute("data-value");
-          bar.style.width = value + "%";
-          observer.unobserve(bar);
-        }
-      });
-    }, { threshold: 0.3 });
-
-    progressBars.forEach(bar => observer.observe(bar));
-  });
-</script>
-
-<!-- Optional styling -->
-<style>
-  .progress {
-    height: 10px;
-    background-color: #e9ecef;
-    border-radius: 50px;
-    overflow: hidden;
-  }
-  .progress-bar {
-    width: 0;
-    transition: width 1.5s ease;
   }
 </style>
 
@@ -511,63 +389,72 @@
 </head>
 <body>
 
-<section id="projects" class="fade-up py-5">
+<!-- Projects Section -->
+<section id="projects" class="py-5" style="background: #f8f9fa;">
   <div class="container">
-    <h2 class="section-title text-center mb-5">Projects</h2>
+    <h2 class="section-title text-center mb-5 fw-bold" style="color:#333;">My Projects</h2>
     <div class="row g-4">
-      
-      <!-- Project 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm">
-          <img src="project1.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Automatic DoorLock system using Arduino</h5>
-            <p class="card-text">
-              An Arduino Uno-based automatic door lock system uses an Arduino board to control a locking mechanism, such as a solenoid lock or servo motor, based on authenticated user input like a scanned RFID card, a entered password, or a Bluetooth command from a phone.
+
+      <!-- Project Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card project-card shadow-lg border-0">
+          <div class="card-img-container">
+            <img src="project1.jpg" class="card-img-top" alt="Project 1">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Automatic DoorLock system using Arduino</h5>
+            <p class="card-text text-muted">
+              Arduino Uno-based automatic door lock system with RFID, password, or Bluetooth authentication.
             </p>
-            <a href="#" class="btn-readmore">Read More</a>
+            <a href="Doorlock.html" class="btn-readmore">Read More</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm">
-          <img src="HMS.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Hospital Management System</h5>
-            <p class="card-text">
-              An HMS website refers to a Hospital Management System website, which is a software application that helps healthcare facilities manage their operations, patients, and data. These services provide a full suite of features for larger hospitals, including electronic health records (EHR), inventory, and financial management.
+      <!-- Project Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card project-card shadow-lg border-0">
+          <div class="card-img-container">
+            <img src="HMS.jpg" class="card-img-top" alt="Project 2">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Hospital Management System</h5>
+            <p class="card-text text-muted">
+              HMS website to manage patients, EHR, inventory & financial data for hospitals.
             </p>
-            <a href="#" class="btn-readmore">Read More</a>
+            <a href="hms.html" class="btn-readmore">Read More</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm">
-          <img src="project3.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Diabetes Prediction Using Machine Learning</h5>
-            <p class="card-text">
-              Using machine learning for diabetes prediction involves training algorithms on historical patient data to identify patterns and determine a person's risk of developing the disease. The ultimate goal is to assist in early diagnosis, which can help prevent or delay serious complications.
+      <!-- Project Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card project-card shadow-lg border-0">
+          <div class="card-img-container">
+            <img src="project3.jpg" class="card-img-top" alt="Project 3">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Diabetes Prediction Using Machine Learning</h5>
+            <p class="card-text text-muted">
+              ML model predicts diabetes risk from historical patient datasets for early diagnosis.
             </p>
-            <a href="#" class="btn-readmore">Read More</a>
+            <a href="diabetes.html" class="btn-readmore">Read More</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm">
-          <img src="kali.jpeg" class="card-img-top" alt="Project 4">
-          <div class="card-body">
-            <h5 class="card-title">Cyber Attack using KALI LINUX</h5>
-            <p class="card-text">
-              Kali Linux contains a comprehensive suite of security tools that can be used for both ethical and malicious purposes. Malicious actors use these tools to perform various attacks.
+      <!-- Project Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card project-card shadow-lg border-0">
+          <div class="card-img-container">
+            <img src="kali.jpeg" class="card-img-top" alt="Project 4">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Cyber Attack using KALI LINUX</h5>
+            <p class="card-text text-muted">
+              Demonstrating ethical hacking with Kali Linux security tools for penetration testing.
             </p>
-            <a href="#" class="btn-readmore">Read More</a>
+            <a href="kali.html" class="btn-readmore">Read More</a>
           </div>
         </div>
       </div>
@@ -575,6 +462,60 @@
     </div>
   </div>
 </section>
+
+<!-- CSS -->
+<style>
+  .project-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+
+  .card-img-container {
+    overflow: hidden;
+    border-bottom: 4px solid #e5e5e5;
+  }
+  .card-img-container img {
+    transition: transform 0.6s ease;
+  }
+  .project-card:hover .card-img-container img {
+    transform: scale(1.15);
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .btn-readmore {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #f8cdda, #1d2b64);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .btn-readmore:hover {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    color: #000;
+    transform: scale(1.05);
+  }
+</style>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 900, once: true });
+</script>
+
 
 <!-- Bootstrap JS (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
