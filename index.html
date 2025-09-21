@@ -13,8 +13,8 @@
   <style>
     :root {
       --bg-color: #efe5ef;     /* pastel cream */
-      --accent-color: #a0c4ff; /* pastel blue */
-      --accent2-color: #be9eaa;/* pastel pink */
+      --accent-color: #87aeed; /* pastel blue */
+      --accent2-color: #a75c8a;/* pastel pink */
       --text-color: #333;
       --card-bg: #ffffff;
     }
@@ -198,6 +198,55 @@
   </div>
 </section>
 
+<!-- Designation / Professional Role with Logo inside Card -->
+<section id="designation" class="fade-up py-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Professional Role</h2>
+    
+    <!-- Role Card with Logo -->
+    <div class="role-card p-5 shadow-lg rounded-4 bg-white d-inline-block" data-aos="fade-up" data-aos-delay="100">
+      
+      <!-- Logo -->
+      <div class="logo-container mb-3">
+        <img src="pure.jpg" alt="Pure Lab & Diabetes Center Logo" class="img-fluid rounded-circle shadow" style="max-width:100px;">
+      </div>
+      
+      <!-- Icon -->
+      <i class="bi bi-person-badge display-4 text-primary mb-3"></i>
+      
+      <!-- Text -->
+      <h3 class="fw-bold">Managing Director</h3>
+      <p class="lead mb-0">MD of <span class="text-success">Pure Lab & Diabetes Center</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- Optional CSS for hover effects -->
+<style>
+  .role-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  .role-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  }
+  .logo-container img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .logo-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+</style>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
 
   <!-- Hobbies -->
   <!-- AOS CSS (add this once in your <head>) -->
@@ -208,10 +257,11 @@
     <h2 class="section-title mb-5">Hobbies</h2>
     <div class="row g-4">
 
-      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100" >
         <div class="p-4 shadow-sm rounded-3 bg-white hobby-card">
           <i class="bi bi-camera display-4 text-primary"></i>
           <p class="mt-3 mb-0 fw-semibold">Photography</p>
+          <a href="photo.html"></a>
         </div>
       </div>
 
@@ -432,28 +482,28 @@
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 1">
+            <img src="project1.jpg" class="card-img-top" alt="Project 1">
             <div class="card-body">
-              <h5 class="card-title">Project One</h5>
-              <p class="card-text">A short description of the project goes here. It highlights your work and contributions.</p>
+              <h5 class="card-title">Automatic DoorLock system using aurdino</h5>
+              <p class="card-text">An Arduino Uno-based automatic door lock system uses an Arduino board to control a locking mechanism, such as a solenoid lock or servo motor, based on authenticated user input like a scanned RFID card, a entered password, or a Bluetooth command from a phone.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 2">
+            <img src="HMS.jpg" class="card-img-top" alt="Project 2">
             <div class="card-body">
-              <h5 class="card-title">Project Two</h5>
-              <p class="card-text">A short description of the project goes here. It highlights your work and contributions.</p>
+              <h5 class="card-title">Hospital Management System</h5>
+              <p class="card-text">An HMS website refers to a Hospital Management System website, which is a software application that helps healthcare facilities manage their operations, patients, and data</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 3">
+            <img src="project3.jpg" class="card-img-top" alt="Project 3">
             <div class="card-body">
-              <h5 class="card-title">Project Three</h5>
-              <p class="card-text">A short description of the project goes here. It highlights your work and contributions.</p>
+              <h5 class="card-title">Diabetes Prediction Using Machine Learning</h5>
+              <p class="card-text">Using machine learning for diabetes prediction involves training algorithms on historical patient data to identify patterns and determine a person's risk of developing the disease. The ultimate goal is to assist in early diagnosis, which can help prevent or delay serious complications</p>
             </div>
           </div>
         </div>
